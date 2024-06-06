@@ -1,0 +1,35 @@
+<script>
+
+var time1, time2, golstime1, golstime2, resultado;
+
+time1 = prompt("Informe o time1: ");
+time2 = prompt("Informe o time2: ");
+golstime1 = prompt("Informe a quantidade de gols do time1: " );
+golstime2 = prompt("Informe a quantidade de gols do time2: " );
+
+document.write (time1 + " " + golstime1 + " X " + golstime2+ " "+ time2 + "</br>");
+
+    golstime1-parseInt(golstime1);
+    golstime2=parseInt(golstime2);   
+
+if(golstime1 > golstime2){
+
+    document.write ("Vitoria "+ time1);
+    
+}else if (golstime1==golstime2) {
+   document.write("EMPATE");    
+}
+else {
+    document.write ("Vitoria "+ time2);
+
+}
+
+
+
+
+
+
+
+
+
+</script>
