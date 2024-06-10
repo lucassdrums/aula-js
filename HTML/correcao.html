@@ -2,13 +2,34 @@
 var nome, nota1, nota2, media, situacao;
 
 nome = prompt("Informe o nome do aluno? ", "");
-nota1 = prompt("Informe a primeira nota: ", "");
+
+
+ 
+
+do{
+
+    nota1 = prompt("Informe a primeira nota: ", "");
+
+if (!Number.isInteger(parseInt(nota1))) {
+    
+    alert("Erro!");
+}
+
+}while(!Number.isInteger(parseInt(nota1)));
+
+do{
+
 nota2 = prompt("Informe a segunda nota: ", "");
 
-if(Number.isInteger(parseInt(nota1))){
+if (!Number.isInteger(parseInt(nota2))) {
 
-    alert("Erro !");
+alert("Erro!");
 }
+
+}while(!Number.isInteger(parseInt(nota2)));
+
+
+/*nota2 = prompt("Informe a segunda nota: ", "");
 
 while (!Number.isInteger(parseInt(nota2))) {
     alert("Digite o inteiro");
@@ -17,7 +38,8 @@ while (!Number.isInteger(parseInt(nota2))) {
 }
 
 
-media = (parseInt (nota1) + parseInt (nota2)/2);
+media = (parseInt (nota1) + parseInt (nota2)/2);*/
+media = (parseInt (nota1) + parseInt (nota2)/2)
 
 if(media > 6.5){
 
